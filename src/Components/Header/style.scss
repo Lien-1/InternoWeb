@@ -1,0 +1,57 @@
+@for $i from 1 to 10 {
+  .col-#{$i} {
+    width: (100% / 16) * ($i);
+  }
+}
+.container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  background-color: transparent;
+  .header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    background-color: transparent;
+    &__logo {
+      .logo-link {
+        display: flex;
+        flex-flow: row nowrap;
+        .logo {
+          width: 28px;
+          height: 28px;
+          margin: 8px 8px 0px 0px;
+        }
+        .name {
+          font-family: var(--font-primary1);
+          font-size: xx-large;
+          color: var(--primary_color2);
+          line-height: 140%;
+        }
+      }
+    }
+    &__navbar {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      .navbar__list {
+        .navbar__item {
+          font-family: var(--font-primary2);
+          font-size: medium;
+          margin: 0 4px;
+          padding: 4px 16px;
+        }
+        .navbar__item.active {
+          color: var(--primary_color1);
+        }
+      }
+    }
+    .search-icon {
+      cursor: pointer;
+    }
+  }
+}
