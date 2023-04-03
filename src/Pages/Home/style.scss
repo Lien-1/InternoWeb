@@ -233,7 +233,7 @@
   .projects {
     display: flex;
     flex-flow: row nowrap;
-    height: 100px;
+    // height: 100px;
     margin-bottom: 150px;
     .project__content {
       flex: 1;
@@ -252,6 +252,11 @@
         }
       }
     }
+  }
+  .counter {
+    background-color: var(--primary_color3);
+    padding: 150px 0;
+    margin-bottom: 200px;
   }
   .blog {
     display: flex;

@@ -1,0 +1,16 @@
+.counter__item {
+  text-align: center;
+  border-left: 1px solid var(--primary_color1);
+  h2 {
+    font-family: var(--font-primary1);
+    font-size: 64px;
+    font-weight: 500;
+    color: var(--primary_color1);
+  }
+  span {
+    font-family: var(--font-primary2);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--sub-text-color);
+  }
+}

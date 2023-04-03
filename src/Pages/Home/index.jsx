@@ -14,6 +14,10 @@ import logo5 from "../../Assets/client_logo/05.svg";
 import blogImage1 from "../../Assets/blog_images/Photo.jpg";
 import blogImage2 from "../../Assets/blog_images/Photo (1).jpg";
 import blogImage3 from "../../Assets/blog_images/Photo (2).jpg";
+import ProjectItem from "../../Components/ProjectItem";
+import ProjectList from "../../Components/ProjectList";
+import Datasources from "./Datasources";
+import CounterList from "../../Components/ConterList";
 Home.propTypes = {};
 
 function Home(props) {
@@ -238,9 +242,12 @@ function Home(props) {
               the of readable content of page looking at its layouts points.
             </p>
           </div>
-          <div className="project__list"></div>
+          <ProjectList projects={Datasources.projects} />
         </div>
         <div className="col-3"></div>
+      </div>
+      <div className="counter">
+        <CounterList counters={Datasources.counters} />
       </div>
       <div className="blog">
         <div className="col-3"></div>
